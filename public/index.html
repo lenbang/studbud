@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello, world!</title>
+  <link href="scss/main.scss" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+</head>
+<body>
+  <h1>Studbud</h1>
+
+  <div id="task-grid">
+    <form id="taskform">
+      <label for="task">Task:</label>
+      <input type="text" name="task" id="taskInput">
+  
+      <br>
+    <!-- Date input -->
+      <label for="dueDate">Due Date: </label>
+      <input type="date" name="dueDate" id="dueDateInput" required>
+      <br>
+    <!-- Time input -->
+    <label for="completionTime">Completion Time: </label>
+      <input type="time" name="completionTime" id="completionTimeInput">
+  
+      <br>
+  
+    <label for="estimatedTime">Estimated completion time (in mins):</label>
+    <input type="number" name="estimatedTime" id="estimatedTimeInput">
+    <!-- Priority -->
+    <br>
+  
+    <label for="priority">Task Priority:</label>
+    <select name="prority" id="priorityInput">
+      <option value="">Select one</option>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+  
+    <br>
+  
+      <button type="submit">Submit</button>
+    </form>
+    <ul id="tasklist">
+      <p id="emptytasklist">No tasks to display</p>
+      <!-- task list here -->
+      <button id="clearButton">Clear task list</button>
+    </ul>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
